@@ -1,0 +1,7 @@
+# dwagd
+Find the day of the week for any given date.
+
+Doesn't work for days prior to 1753.  The algorithm is based on a procedure  defined in **The Old Farmer's Almanac** ("How to Find the Day of the Week for Any Given Date" 261).
+
+## Works Cited
+"How to Find the Day of the Week for Any Given Date." The Old Farmer's Almanac. 2019 ed. Print.
