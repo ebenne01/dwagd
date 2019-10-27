@@ -28,13 +28,6 @@ struct ContentView : View {
           }
           Spacer()
         }
-        HStack {
-          Spacer()
-          Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-            Text("Clear")
-          }
-          Spacer()
-        }
       }
     }
   }
