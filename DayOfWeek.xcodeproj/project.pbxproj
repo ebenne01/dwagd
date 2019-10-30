@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B4E83F12365FA9D00E91AB2 /* DayOfWeekCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E83F02365FA9D00E91AB2 /* DayOfWeekCalculator.swift */; };
+		2B4E83F42366009D00E91AB2 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E83F32366009D00E91AB2 /* Day.swift */; };
 		2B70A951233080620028A8CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B70A950233080620028A8CE /* AppDelegate.swift */; };
 		2B70A953233080620028A8CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B70A952233080620028A8CE /* SceneDelegate.swift */; };
 		2B70A955233080620028A8CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B70A954233080620028A8CE /* ContentView.swift */; };
 		2B70A957233080630028A8CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B70A956233080630028A8CE /* Assets.xcassets */; };
 		2B70A95A233080630028A8CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B70A959233080630028A8CE /* Preview Assets.xcassets */; };
 		2B70A95D233080630028A8CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B70A95B233080630028A8CE /* LaunchScreen.storyboard */; };
-		2B70A968233080630028A8CE /* DayOfWeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B70A967233080630028A8CE /* DayOfWeekTests.swift */; };
 		2B70A973233080640028A8CE /* DayOfWeekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B70A972233080640028A8CE /* DayOfWeekUITests.swift */; };
+		2B80055E2368218E000B8C30 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B80055D2368218E000B8C30 /* DateExtension.swift */; };
+		2B80056023682263000B8C30 /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B80055F23682263000B8C30 /* DateExtensionTests.swift */; };
+		2BB16BF42367D3BA0017432D /* DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB16BF32367D3BA0017432D /* DayTests.swift */; };
+		2BB16BF62367D5EA0017432D /* DayOfWeekCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB16BF52367D5EA0017432D /* DayOfWeekCalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B4E83F02365FA9D00E91AB2 /* DayOfWeekCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeekCalculator.swift; sourceTree = "<group>"; };
+		2B4E83F32366009D00E91AB2 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		2B70A94D233080620028A8CE /* DayOfWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayOfWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B70A950233080620028A8CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B70A952233080620028A8CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,11 +51,14 @@
 		2B70A95C233080630028A8CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B70A95E233080630028A8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B70A963233080630028A8CE /* DayOfWeekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayOfWeekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B70A967233080630028A8CE /* DayOfWeekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeekTests.swift; sourceTree = "<group>"; };
 		2B70A969233080630028A8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B70A96E233080640028A8CE /* DayOfWeekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayOfWeekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B70A972233080640028A8CE /* DayOfWeekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeekUITests.swift; sourceTree = "<group>"; };
 		2B70A974233080640028A8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B80055D2368218E000B8C30 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		2B80055F23682263000B8C30 /* DateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
+		2BB16BF32367D3BA0017432D /* DayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTests.swift; sourceTree = "<group>"; };
+		2BB16BF52367D5EA0017432D /* DayOfWeekCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeekCalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,9 @@
 				2B70A95B233080630028A8CE /* LaunchScreen.storyboard */,
 				2B70A95E233080630028A8CE /* Info.plist */,
 				2B70A958233080630028A8CE /* Preview Content */,
+				2B4E83F02365FA9D00E91AB2 /* DayOfWeekCalculator.swift */,
+				2B4E83F32366009D00E91AB2 /* Day.swift */,
+				2B80055D2368218E000B8C30 /* DateExtension.swift */,
 			);
 			path = DayOfWeek;
 			sourceTree = "<group>";
@@ -121,8 +134,10 @@
 		2B70A966233080630028A8CE /* DayOfWeekTests */ = {
 			isa = PBXGroup;
 			children = (
-				2B70A967233080630028A8CE /* DayOfWeekTests.swift */,
 				2B70A969233080630028A8CE /* Info.plist */,
+				2BB16BF32367D3BA0017432D /* DayTests.swift */,
+				2BB16BF52367D5EA0017432D /* DayOfWeekCalculatorTests.swift */,
+				2B80055F23682263000B8C30 /* DateExtensionTests.swift */,
 			);
 			path = DayOfWeekTests;
 			sourceTree = "<group>";
@@ -268,7 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B70A951233080620028A8CE /* AppDelegate.swift in Sources */,
+				2B80055E2368218E000B8C30 /* DateExtension.swift in Sources */,
+				2B4E83F12365FA9D00E91AB2 /* DayOfWeekCalculator.swift in Sources */,
 				2B70A953233080620028A8CE /* SceneDelegate.swift in Sources */,
+				2B4E83F42366009D00E91AB2 /* Day.swift in Sources */,
 				2B70A955233080620028A8CE /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B70A968233080630028A8CE /* DayOfWeekTests.swift in Sources */,
+				2BB16BF42367D3BA0017432D /* DayTests.swift in Sources */,
+				2B80056023682263000B8C30 /* DateExtensionTests.swift in Sources */,
+				2BB16BF62367D5EA0017432D /* DayOfWeekCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "DayOfWeek/Preview\\ Content";
+				DEVELOPMENT_TEAM = RGG45D58Q7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DayOfWeek/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,6 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "DayOfWeek/Preview\\ Content";
+				DEVELOPMENT_TEAM = RGG45D58Q7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DayOfWeek/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
