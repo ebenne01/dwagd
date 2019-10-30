@@ -23,13 +23,21 @@ struct ContentView : View {
       Section {
         HStack {
           Spacer()
-          Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+          Button(action: calculateDay) {
             Text("Calculate Day")
           }
           Spacer()
         }
       }
     }
+  }
+  
+  func calculateDay() {
+    guard textFieldValue.count == 10 else { return }
+    let calculator = DayOfWeekCalculator()
+    let date = calculator.getDateFromString(textFieldValue)
+    let day = DayOfWeekCalculator().calculateDayOfWeek(forDate: date!)
+    textValue = day.description
   }
 }
 
