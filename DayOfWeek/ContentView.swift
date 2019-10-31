@@ -9,35 +9,26 @@
 import SwiftUI
 
 struct ContentView : View {
-  @State var textValue = ""
-  @State var textFieldValue = ""
+  let calculator = DayOfWeekCalculator()
+  @State var selectedDate = Date()
   
   var body: some View {
-    Form {
-      Section(header: Text("Day of Week")) {
-        TextField("Date (mm/dd/yyyy)", text: $textFieldValue) {
+    NavigationView {
+      Form {
+        DatePicker(selection: $selectedDate, displayedComponents: .date) {
+          Text("Date")
         }
-        Text(textValue)
-      }
-      
-      Section {
         HStack {
           Spacer()
-          Button(action: calculateDay) {
-            Text("Calculate Day")
-          }
-          Spacer()
+          Text("\(calculateDay(selectedDate).description)")
         }
       }
+      .navigationBarTitle("Day Of The Week")
     }
   }
   
-  func calculateDay() {
-    guard textFieldValue.count == 10 else { return }
-    let calculator = DayOfWeekCalculator()
-    let date = calculator.getDateFromString(textFieldValue)
-    let day = DayOfWeekCalculator().calculateDayOfWeek(forDate: date!)
-    textValue = day.description
+  func calculateDay(_ date: Date) -> Day {
+    return calculator.calculateDayOfWeek(forDate: date)
   }
 }
 
