@@ -16,7 +16,7 @@ struct ContentView : View {
     VStack {
       Text("Day Of The Week")
         .font(.largeTitle)
-      DatePicker("",
+      DatePicker("Date",
                  selection: $selectedDate,
                  displayedComponents: .date
       )
