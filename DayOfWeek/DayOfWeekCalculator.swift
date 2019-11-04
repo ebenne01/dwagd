@@ -53,12 +53,7 @@ struct DayOfWeekCalculator {
       }
       
       let dayNumber = sum % 7
-      
-      if dayNumber == 0 {
-        return .saturday
-      } else {
-        return Day.fromRawValue(dayNumber)
-      }
+      return Day.fromRawValue(dayNumber)
     } catch {
       return .undefined
     }
