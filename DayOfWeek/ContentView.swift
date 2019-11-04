@@ -13,17 +13,15 @@ struct ContentView : View {
   @State var selectedDate = Date()
   
   var body: some View {
-    NavigationView {
-      Form {
-        DatePicker(selection: $selectedDate, displayedComponents: .date) {
-          Text("Date")
-        }
-        HStack {
-          Spacer()
-          Text("\(calculateDay(selectedDate).description)")
-        }
-      }
-      .navigationBarTitle("Day Of The Week")
+    VStack {
+      Text("Day Of The Week")
+        .font(.largeTitle)
+      DatePicker("",
+                 selection: $selectedDate,
+                 displayedComponents: .date
+      )
+        .labelsHidden()
+      Text("\(calculateDay(selectedDate).description)")
     }
   }
   
