@@ -20,7 +20,8 @@ struct ContentView : View {
                  selection: $selectedDate,
                  displayedComponents: .date
       )
-        .labelsHidden()
+      .datePickerStyle(WheelDatePickerStyle())
+      .labelsHidden()
       Text("\(calculateDay(selectedDate).description)")
     }
   }
@@ -31,10 +32,8 @@ struct ContentView : View {
 }
 
 
-#if DEBUG
 struct ContentView_Previews : PreviewProvider {
   static var previews: some View {
     ContentView()
   }
 }
-#endif
